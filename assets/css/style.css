@@ -1,0 +1,453 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contener{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+header{
+    height: 30px;
+    background-color: #138086c0;
+   
+}
+/* nav{
+     display: flex;
+    align-items: center;
+    justify-content: space-between;
+} */
+/* nav .toto{
+    color: white;
+    font-size: 20px;
+    display: none;
+} */
+header nav ul{
+    display: flex;   
+    align-items: center;
+    justify-content: space-evenly;
+}
+@media(max-width:952px){
+    header nav ul{
+        flex-wrap: wrap;
+    }
+    header nav ul li{
+        width: 130px;
+    }
+    header{
+        height:120px ;
+        padding: 15px;
+    }
+}
+header nav ul li{
+    list-style: none;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 22px; 
+}
+/* Start Main */
+.main{
+    height: 100vh;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: linear-gradient(to top , #eeb462 , #cd7672);
+}
+.main .contener{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: center;
+}
+@media(max-width:779px){
+    .main{
+        height: fit-content;
+    }
+    .main .contener{
+        flex-direction: column;
+    }
+    .main .contener img{
+        width: 450px;
+        padding-bottom: 50px;
+    }
+    .main .contener .text h1{
+        font-size: 30px;
+    }
+}
+.main .contener .text{
+    max-width: 550px;
+}
+.main .contener .text h2{
+    color: #534666;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.main .contener .text h1{
+    color: white;
+    font-size: 40px;
+    font-weight: 900;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+.main .contener .text p{
+    margin-top: 10px;
+    font-size: 15px;
+    color:black;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.9rem;
+}
+
+/* End Main */
+/* start about us */
+.about{
+    height: 500px;
+    padding-top: 200px;
+    padding-bottom: 200px; 
+    background-color: #ffffff;
+}
+.about .contener {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.about .contener h2 {
+   font-size: 50px;
+   font-weight: 900;
+   font-family: 'Courier New', Courier, monospace;
+   color: #6f5f90;
+}
+.about .contener p {
+    margin-top: 10px;
+    font-size: 15px;
+    color:black;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.9rem;
+}
+/* End about us */
+/* Start Services */
+.Services{
+    height: 500px;
+    padding-top: 100px;
+    padding-bottom: 100px; 
+    background-color: #f8b75d;
+}
+.Services h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: 900;
+    font-family: 'Courier New', Courier, monospace;
+    color: #6f5f90;
+}
+.Services .contener{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 70px;
+}
+@media(max-width:1300px){
+    .contener{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .Services .contener{
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+    .Services{
+        height: fit-content;
+    }
+}
+.Services .contener .card{
+    padding: 10px;
+    box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
+    width: 250px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(to top , rgba(255, 255, 255, 0.466) , #e0e7eac9);
+    border-radius: 15px;
+}
+.Services .contener .card h3{
+    margin-bottom: 30px;
+    font-size: 26px;
+    color: #522157;
+}
+.Services .contener .card p{
+    font-family: 'Courier New', Courier, monospace;
+}
+/* End Services */
+/* Start specializations */
+.specializations{
+    height: 500px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.specializations h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: 900;
+    font-family: 'Courier New', Courier, monospace;
+    color: #6f5f90;
+}
+.specializations .contener{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 70px;
+}
+@media(max-width:779px){
+    .specializations{
+        height: fit-content;
+    }
+    .specializations .contener{
+        flex-direction: column;
+    }
+}
+.specializations .contener .card{
+    padding: 10px;
+}
+.specializations .contener .card h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.specializations .contener .card p{
+    line-height: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* End specializations */
+/* Start Our Teachers */
+.Teachers{
+    height: 700px;
+    padding-top: 100px;
+    padding-bottom: 100px; 
+    background-color: #f8b75d;
+}
+.Teachers h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: 900;
+    font-family: 'Courier New', Courier, monospace;
+    color: #6f5f90;
+}
+@media(max-width:1300px){
+    .Teachers .contener{
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+    .Teachers{
+        height: fit-content;
+    }
+}
+.Teachers .contener{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 70px;
+} 
+
+.Teachers .contener .card{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #b9d4db49;
+    width: 400px;
+    height: 370px;
+    border-bottom-right-radius: 100px;
+    border-top-left-radius: 100px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.39);
+}
+.Teachers .contener .card img{
+  margin-bottom: 20px;
+}
+.Teachers .contener .card h3{
+    margin-bottom: 30px;
+    font-size: 44px;
+    color: #478ba2;
+}
+.Teachers .contener .card p{
+    line-height: 1.4rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+/* End Our Teachers */
+/* Start Plans */
+.plans{
+    height: 700px;
+    padding-top: 100px;
+    padding-bottom: 100px; 
+    margin-bottom: 100px;
+}
+.plans h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: 900;
+    font-family: 'Courier New', Courier, monospace;
+    color: #6f5f90;
+}
+.plans .contener{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 70px;
+}
+@media(max-width:1300px){
+    .plans .contener{
+        flex-wrap: wrap;
+        gap: 90px;
+    }
+    .plans{
+        height: fit-content;
+    }
+}
+.plans .contener .card{
+    padding: 10px;
+    background-color: #b9d4db49;
+    width: 350px;
+    height: 490px;
+    border-radius: 50px;
+    box-shadow: 0 2px 15px #f8b75d;
+}
+.plans .contener .card h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-weight: 900;
+    font-size: 30px;
+}
+.plans .contener .card img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.plans .contener .card ul {
+     padding-left: 40px;
+     margin-bottom: 20px;
+}
+.plans .contener .card ul li{
+    font-size: 20px;
+}
+
+.plans .contener .card .footer{
+background-color: #ff7b88bb;
+padding: 30px;
+border-radius: 50px;
+box-shadow: 0 2px 15px black;
+}
+.plans .contener .card .footer p {
+margin-bottom: 10px;
+font-size: 20px;
+font-family: 'Josefin Sans', sans-serif;
+}
+/* End Plans */
+/* Start Contact Us */
+.Contact{
+    height: 500px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #f8b75d; 
+}
+.Contact h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: 900;
+    font-family: 'Courier New', Courier, monospace;
+    color: #6f5f90;
+    margin-bottom: 30px;
+}
+.Contact .contener {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Contact .contener form{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+.Contact .contener form input{
+    margin-bottom: 10px;
+    height: 30px;
+}
+.Contact .contener form textarea{
+    height: 50px;
+}
+.Contact .contener form .submit{
+    width: 100px;
+margin: auto;
+background-color: black;
+color: white;
+padding: 10px;
+border: none;
+}
+/* End Contact Us */
+/* Start Contact Info */
+.info{
+    height: 200px;
+    padding-bottom: 50px;
+    background-color: #f8b75d; 
+}
+.info .contener {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.info h1{
+    font-size: 50px;
+    font-weight: 900;
+    font-family: 'Courier New', Courier, monospace;
+    color: #6f5f90;
+    margin-bottom: 30px;
+}
+.info p{
+    line-height: 1.4rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+/* End Contact Info */
+/* Start Follow Us */
+.Follow{
+    height: 40px;
+    background-color: #138086c0;
+}
+.Follow .contener{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Follow .contener ul{
+    display: flex;
+}
+.Follow .contener ul li{
+    list-style: none;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+.Follow .contener ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+}
+/* End Follow Us */
